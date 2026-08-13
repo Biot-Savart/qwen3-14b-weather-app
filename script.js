@@ -4,7 +4,7 @@ let chart;
 // Get current location
 function getLocation() {
   if (navigator.geolocation) {
-    navigator.geolocation.getCurrentPosition(showWeather, handleError);
+    navigator.geolocation.getCurrentPosition(fetchWeather, handleError);
   } else {
     alert("Geolocation not supported.");
   }
